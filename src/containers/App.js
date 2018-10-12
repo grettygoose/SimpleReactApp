@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
+import {Provider, connect} from 'react-redux';
+import {createStore } from 'redux';
 import { robots } from '../robots'
 import '../containers/App.css'
 import Scroll from  '../components/Scroll'
 import ErrorBoundary from '../components/ErrorBoundary';
+import { searchRobots } from '../reducers';
+
+
 
 
 class App extends Component  {
